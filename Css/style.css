@@ -28,6 +28,9 @@ nav {
     align-items: center;
     padding: 20px 10%;
     background-color: #111;
+    position: sticky;
+top: 0;
+z-index: 1000;
 }
 
 .logo {
@@ -98,9 +101,11 @@ nav ul li a:hover {
     padding: 12px 25px;
     border-radius: 5px;
     font-weight: bold;
+     transition: all 0.3s ease;
 }
 .btn:hover {
     background: darkorange;
+      transform: scale(1.05)
 }
 
 /* =========================
@@ -226,7 +231,7 @@ nav ul li a:hover {
 
 .dish-card,
 .testimonial-card {
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .dish-card:hover,
