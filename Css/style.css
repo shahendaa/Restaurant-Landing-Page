@@ -11,6 +11,11 @@
 
 body {
     font-family: Arial, sans-serif;
+     
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* =========================
@@ -34,7 +39,7 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 10px;
 }
 
 nav ul li a {
@@ -70,6 +75,9 @@ nav ul li a:hover {
     text-align: center;
 
     color: white;
+}
+.hero-content {
+    max-width: 800px;
 }
 
 .hero-content h1 {
@@ -216,6 +224,16 @@ nav ul li a:hover {
     color: orange;
 }
 
+.dish-card,
+.testimonial-card {
+    transition: transform 0.3s ease;
+}
+
+.dish-card:hover,
+.testimonial-card:hover {
+    transform: translateY(-8px);
+}
+
 /* =========================
    Contact Section
 ========================= */
@@ -279,4 +297,59 @@ footer {
     color: white;
     text-align: center;
     padding: 25px;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+
+  
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        padding: 15px 5%;
+    }
+
+    
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-content {
+        padding: 0 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .dish-card,
+    .testimonial-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .featured h2,
+    .about-content h2,
+    .testimonials h2,
+    .contact h2 {
+        font-size: 32px;
+    }
 }
