@@ -411,6 +411,10 @@ img {
     .menu-toggle {
     display: block;
 }
+
+.social-icons i {
+    font-size: 22px;
+}
 }
 
 @keyframes fadeUp {
