@@ -98,6 +98,7 @@ nav ul li a:hover {
 .hero-content h1 {
     font-size: 65px;
     margin-bottom: 20px;
+     line-height: 1.1;
 }
 
 .hero-content p {
@@ -316,6 +317,11 @@ footer {
     color: white;
     text-align: center;
     padding: 25px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 /* =========================
