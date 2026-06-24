@@ -10,10 +10,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-     
+    font-family: 'Poppins', sans-serif;
 }
-
 html {
     scroll-behavior: smooth;
 }
@@ -31,12 +29,14 @@ nav {
     position: sticky;
 top: 0;
 z-index: 1000;
+box-shadow: 0 2px 15px rgba(0,0,0,0.2);
 }
 
 .logo {
-    color: white;
-    font-size: 28px;
-    font-weight: bold;
+    color: orange;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 nav ul {
@@ -81,10 +81,11 @@ nav ul li a:hover {
 }
 .hero-content {
     max-width: 800px;
+    padding: 0 20px;
 }
 
 .hero-content h1 {
-    font-size: 60px;
+    font-size: 65px;
     margin-bottom: 20px;
 }
 
@@ -232,11 +233,13 @@ nav ul li a:hover {
 .dish-card,
 .testimonial-card {
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .dish-card:hover,
 .testimonial-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
+     box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 
 /* =========================
@@ -327,6 +330,7 @@ footer {
 
     .hero-content {
         padding: 0 20px;
+        animation: fadeUp 1s ease;
     }
 
     .hero-content h1 {
@@ -356,5 +360,17 @@ footer {
     .testimonials h2,
     .contact h2 {
         font-size: 32px;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
