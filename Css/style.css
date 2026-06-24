@@ -49,10 +49,11 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
+     transition: 0.3s;
 }
 
 nav ul li a:hover {
-    color: orange;
+    border-bottom: 2px solid orange;
 }
 
 .menu-toggle {
@@ -294,6 +295,9 @@ nav ul li a:hover {
     min-width: 300px;
 }
 
+.contact-form button {
+    width: 100%;
+}
 .contact-form input,
 .contact-form textarea {
     width: 100%;
@@ -322,6 +326,21 @@ footer {
 img {
     max-width: 100%;
     display: block;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icons i {
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icons i:hover {
+    color: orange;
 }
 
 /* =========================
